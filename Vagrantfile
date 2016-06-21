@@ -12,6 +12,12 @@ Vagrant.configure(2) do |config|
   config.ssh.insert_key = false
 
   #
+  # Network configuration.
+  #
+  config.vm.hostname = "postgres"
+  config.vm.network :private_network, ip: "10.10.10.100"
+
+  #
   # VM config.
   #
   config.vm.provider :virtualbox do |vb|
