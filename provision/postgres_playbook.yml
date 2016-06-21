@@ -1,9 +1,8 @@
 ---
 - name: Create PostgreSQL server
   hosts: dbserver
-  sudo: yes
-  sudo_user: root
-  remote_user: Vagrant
+  become: yes
+  remote_user: vagrant
   vars_files:
     - vars/main.yml
 
