@@ -1,6 +1,6 @@
 ---
 - name: Create PostgreSQL server
-  hosts: dbserver
+  hosts: all
   become: yes
   remote_user: vagrant
   vars_files:
